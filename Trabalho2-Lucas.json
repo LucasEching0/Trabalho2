@@ -1,0 +1,1740 @@
+[
+    {
+        "id": "fc9743e492ace37e",
+        "type": "tab",
+        "label": "Projeto 2 - Lucas Eduardo",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1b8591cdff0d64c0",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#878787",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#7d7d7d",
+                "baseFont": "Arial Black,Arial Black,Gadget,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#7d7d7d",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#2d2020",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#584b4b",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#ff0000",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#474847",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#949494",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "Arial Black,Arial Black,Gadget,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Automação Industrial - Tanque Industrial",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "2ba8bb5e7935c93b",
+        "type": "mqtt-broker",
+        "name": "tago_io_mqtt",
+        "broker": "mqtt.tago.io",
+        "port": "1883",
+        "clientid": "ESP32Lucas",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "a7f3c273b31ce5c7",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "ec2eching.duckdns.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "14e9b2a51730b487",
+        "type": "ui_group",
+        "name": "Gráficos",
+        "tab": "3046f6ea24ac700b",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a139738a6814e2a9",
+        "type": "ui_group",
+        "name": "Sensores",
+        "tab": "3046f6ea24ac700b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e20cd85b889eb118",
+        "type": "ui_group",
+        "name": "LEDs",
+        "tab": "3046f6ea24ac700b",
+        "order": 3,
+        "disp": true,
+        "width": 4,
+        "collapse": false
+    },
+    {
+        "id": "3c1b09fa4c168fdf",
+        "type": "ui_group",
+        "name": "Gráfico referente a leitura dos sensores",
+        "tab": "424609d3f59a5919",
+        "order": 2,
+        "disp": true,
+        "width": "18",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6a4e2e67017b39e7",
+        "type": "ui_group",
+        "name": "Tabela referente a leitura dos sensores",
+        "tab": "c16b14bf1dceba15",
+        "order": 1,
+        "disp": true,
+        "width": "14",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3046f6ea24ac700b",
+        "type": "ui_tab",
+        "name": "Automação de um Tanque Industrial",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c16b14bf1dceba15",
+        "type": "ui_tab",
+        "name": "Histórico de leitura (Tabela)",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "424609d3f59a5919",
+        "type": "ui_tab",
+        "name": "Histórico de leitura (Gráfico)",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "902f7841d4184556",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "ec2eching.duckdns.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7d5b61334a495a1c",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "servidorlucas.cjo16ookqceo.us-east-2.rds.amazonaws.com",
+        "port": "3306",
+        "db": "sensoreslucas",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "d3943150eeadd960",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {}
+    },
+    {
+        "id": "5654e16b2eb2f58d",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "servidorlucas.cjo16ookqceo.us-east-2.rds.amazonaws.com",
+        "port": "3306",
+        "db": "sensorpress",
+        "tz": "",
+        "charset": ""
+    },
+    {
+        "id": "f5b87bb19e7674f1",
+        "type": "ui_spacer",
+        "z": "fc9743e492ace37e",
+        "name": "spacer",
+        "group": "3c1b09fa4c168fdf",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d643fa831d17a8ce",
+        "type": "ui_spacer",
+        "z": "fc9743e492ace37e",
+        "name": "spacer",
+        "group": "3c1b09fa4c168fdf",
+        "order": 3,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "116df63f555c7ab2",
+        "type": "ui_spacer",
+        "z": "fc9743e492ace37e",
+        "name": "spacer",
+        "group": "3c1b09fa4c168fdf",
+        "order": 4,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "e3bc65b1a61781d0",
+        "type": "ui_spacer",
+        "z": "fc9743e492ace37e",
+        "name": "spacer",
+        "group": "3c1b09fa4c168fdf",
+        "order": 5,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "2e39d2e4bbc18b8b",
+        "type": "ui_spacer",
+        "z": "fc9743e492ace37e",
+        "name": "spacer",
+        "group": "3c1b09fa4c168fdf",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "448b3de892dc31bd",
+        "type": "ui_spacer",
+        "z": "fc9743e492ace37e",
+        "name": "spacer",
+        "group": "3c1b09fa4c168fdf",
+        "order": 7,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "c3d1132bc72347f6",
+        "type": "ui_spacer",
+        "z": "fc9743e492ace37e",
+        "name": "spacer",
+        "group": "3c1b09fa4c168fdf",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "5099b729dad77cdd",
+        "type": "ui_spacer",
+        "z": "fc9743e492ace37e",
+        "name": "spacer",
+        "group": "3c1b09fa4c168fdf",
+        "order": 9,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0265f098d302d1c7",
+        "type": "ui_spacer",
+        "z": "fc9743e492ace37e",
+        "name": "spacer",
+        "group": "3c1b09fa4c168fdf",
+        "order": 10,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8e193e9f2e31ef37",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "servidorlucas.cjo16ookqceo.us-east-2.rds.amazonaws.com",
+        "port": "3306",
+        "db": "sensorniv",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "cc01813b35954bbc",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "servidorlucas.cjo16ookqceo.us-east-2.rds.amazonaws.com",
+        "port": "3306",
+        "db": "sensortemp",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "98c9a8da859eeefa",
+        "type": "mqtt in",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "902f7841d4184556",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "d147ef3b740a0f1b",
+                "076fbd1e85040cfb",
+                "4dfdecaacfb79b58",
+                "db4f800df7878cdc"
+            ]
+        ]
+    },
+    {
+        "id": "076fbd1e85040cfb",
+        "type": "ui_gauge",
+        "z": "fc9743e492ace37e",
+        "name": "Medidor temperatura",
+        "group": "a139738a6814e2a9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperatura",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 380,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1a8601362f732f5d",
+        "type": "comment",
+        "z": "fc9743e492ace37e",
+        "name": "Leitura analógica",
+        "info": "",
+        "x": 120,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "22a2fe6fb0fe314c",
+        "type": "comment",
+        "z": "fc9743e492ace37e",
+        "name": "Mysql: Select últimos 10 dados para grafico e tabela",
+        "info": "",
+        "x": 230,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "f7f7887d874ed04e",
+        "type": "comment",
+        "z": "fc9743e492ace37e",
+        "name": "Grava os valores dos sensores em mysql",
+        "info": "",
+        "x": 200,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "521414eee26b9492",
+        "type": "mysql",
+        "z": "fc9743e492ace37e",
+        "mydb": "7d5b61334a495a1c",
+        "name": "conexao_mysql",
+        "x": 460,
+        "y": 1180,
+        "wires": [
+            [
+                "cb063b51260d185a"
+            ]
+        ]
+    },
+    {
+        "id": "93c37a7a67afb051",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "DELET",
+        "func": "\nmsg.topic = \"Delete  FROM tempLog ;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 1180,
+        "wires": [
+            [
+                "521414eee26b9492"
+            ]
+        ]
+    },
+    {
+        "id": "cb063b51260d185a",
+        "type": "debug",
+        "z": "fc9743e492ace37e",
+        "name": "dados mysql",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "9d85c3c075172d07",
+        "type": "inject",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 1180,
+        "wires": [
+            [
+                "93c37a7a67afb051"
+            ]
+        ]
+    },
+    {
+        "id": "125fb5a7c8a6f46c",
+        "type": "comment",
+        "z": "fc9743e492ace37e",
+        "name": "Mysql: Select últimos 10 dados para grafico e tabela",
+        "info": "",
+        "x": 230,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "d147ef3b740a0f1b",
+        "type": "ui_chart",
+        "z": "fc9743e492ace37e",
+        "name": "Gráfico temperatura",
+        "group": "14e9b2a51730b487",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperatura",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "1000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 380,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c6222deb96605458",
+        "type": "mqtt in",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "topic": "esp32/pressure",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "902f7841d4184556",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 120,
+        "y": 320,
+        "wires": [
+            [
+                "4e040fb79edb560d",
+                "28c79b2fd8c9421b",
+                "e1d1b751f99d3561",
+                "2d9b37dec981d079"
+            ]
+        ]
+    },
+    {
+        "id": "28c79b2fd8c9421b",
+        "type": "ui_gauge",
+        "z": "fc9743e492ace37e",
+        "name": "Medidor de pressão",
+        "group": "a139738a6814e2a9",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Pressão",
+        "label": "psi",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 380,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4e040fb79edb560d",
+        "type": "ui_chart",
+        "z": "fc9743e492ace37e",
+        "name": "Gráfico de pressão",
+        "group": "14e9b2a51730b487",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Pressão",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "2000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 370,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d10bb4ba6ddd9d92",
+        "type": "mqtt in",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "topic": "esp32/level",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "902f7841d4184556",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 540,
+        "wires": [
+            [
+                "6eef20518f0398cc",
+                "c7dde00d5ebb7403",
+                "596f4df446000fb8",
+                "a6880e787862ce10",
+                "bbfd3794eff5a25e"
+            ]
+        ]
+    },
+    {
+        "id": "c7dde00d5ebb7403",
+        "type": "ui_gauge",
+        "z": "fc9743e492ace37e",
+        "name": "Medidor de Nível",
+        "group": "a139738a6814e2a9",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Nível",
+        "label": "L",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "3000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "6eef20518f0398cc",
+        "type": "ui_chart",
+        "z": "fc9743e492ace37e",
+        "name": "Gráfico de nível",
+        "group": "14e9b2a51730b487",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Nível",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "3000",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 360,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a8cfbb577e88213c",
+        "type": "ui_led",
+        "z": "fc9743e492ace37e",
+        "order": 2,
+        "group": "e20cd85b889eb118",
+        "width": "3",
+        "height": "3",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#009419",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0505",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED-Temp",
+        "x": 590,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "4dfdecaacfb79b58",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "Turn On LED",
+        "func": "if (msg.payload > 800) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 60,
+        "wires": [
+            [
+                "a8cfbb577e88213c"
+            ]
+        ]
+    },
+    {
+        "id": "9a068a4fbbf13f8e",
+        "type": "ui_text",
+        "z": "fc9743e492ace37e",
+        "group": "e20cd85b889eb118",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Superaquecimento",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 610,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "4d636d5f72e59f3a",
+        "type": "ui_text",
+        "z": "fc9743e492ace37e",
+        "group": "e20cd85b889eb118",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Sobrepresão",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 590,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "4d35f5f10d47c30a",
+        "type": "ui_led",
+        "z": "fc9743e492ace37e",
+        "order": 4,
+        "group": "e20cd85b889eb118",
+        "width": "3",
+        "height": "3",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#009419",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0505",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED-Press",
+        "x": 590,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e1d1b751f99d3561",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "Turn On LED",
+        "func": "if (msg.payload > 1600) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 280,
+        "wires": [
+            [
+                "4d35f5f10d47c30a"
+            ]
+        ]
+    },
+    {
+        "id": "8ca40acbc979426f",
+        "type": "ui_text",
+        "z": "fc9743e492ace37e",
+        "group": "e20cd85b889eb118",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Nível perigoso",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 600,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "b8f240035ca7508b",
+        "type": "ui_led",
+        "z": "fc9743e492ace37e",
+        "order": 6,
+        "group": "e20cd85b889eb118",
+        "width": "3",
+        "height": "3",
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "center",
+        "colorForValue": [
+            {
+                "color": "#009419",
+                "value": "false",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ff0505",
+                "value": "true",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED-Niv",
+        "x": 580,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "596f4df446000fb8",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "Turn On LED",
+        "func": "if (msg.payload > 2800) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 500,
+        "wires": [
+            [
+                "b8f240035ca7508b"
+            ]
+        ]
+    },
+    {
+        "id": "a6880e787862ce10",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "Cálculo da Vazão",
+        "func": "context.lastReading = context.lastReading || null;\ncontext.intervalInSeconds = 1;\n\nvar currentReading = msg.payload;\n\nif (context.lastReading !== null) {\n    var levelDifference = currentReading - context.lastReading;\n    var flowRate = levelDifference / context.intervalInSeconds * 1;\n    context.lastReading = currentReading;\n    msg.payload = flowRate;\n} else {\n    context.lastReading = currentReading;\n    msg.payload = 0;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 620,
+        "wires": [
+            [
+                "bb0f415acd54b964"
+            ]
+        ]
+    },
+    {
+        "id": "bb0f415acd54b964",
+        "type": "ui_text",
+        "z": "fc9743e492ace37e",
+        "group": "14e9b2a51730b487",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Vazão (litros/s):",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 600,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "dca8961c344b7025",
+        "type": "inject",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1020,
+        "wires": [
+            [
+                "358375ee24c29400"
+            ]
+        ]
+    },
+    {
+        "id": "358375ee24c29400",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "SELECT",
+        "func": "msg.topic = \"SELECT temperature as temperatura, pressure as pressao, level as nivel, timeStamp as timeStamp FROM tempLog where timeStamp >= now() - 84600;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 1020,
+        "wires": [
+            [
+                "8cff6fc79229b0a2"
+            ]
+        ]
+    },
+    {
+        "id": "8cff6fc79229b0a2",
+        "type": "mysql",
+        "z": "fc9743e492ace37e",
+        "mydb": "7d5b61334a495a1c",
+        "name": "conexao_mysql",
+        "x": 460,
+        "y": 1020,
+        "wires": [
+            [
+                "b8ed33c81f54944c",
+                "870863ccbfdd3977"
+            ]
+        ]
+    },
+    {
+        "id": "b8ed33c81f54944c",
+        "type": "change",
+        "z": "fc9743e492ace37e",
+        "name": "Format data",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "(\t  $series := [\t    { \"label\": \"temperatura (°C)\", \"field\": \"temperatura\" },\t    { \"label\": \"pressao (psi)\", \"field\": \"pressao\" },\t    { \"label\": \"nivel (L)\", \"field\": \"nivel\" }\t  ];\t  $xaxis := \"timeStamp\";\t  [\t    {\t      \"series\": $series.label,\t      \"data\": $series.[\t        (\t          $yaxis := $.field;\t          $$.payload.{\t            \"x\": $lookup($, $xaxis),\t            \"y\": $lookup($, $yaxis)\t          }\t        )\t      ]\t    }\t  ]\t)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 1020,
+        "wires": [
+            [
+                "727c547d47e95207"
+            ]
+        ]
+    },
+    {
+        "id": "727c547d47e95207",
+        "type": "ui_chart",
+        "z": "fc9743e492ace37e",
+        "name": "24 hours data",
+        "group": "3c1b09fa4c168fdf",
+        "order": 1,
+        "width": 16,
+        "height": 9,
+        "label": "Gráfico temperatura, pressão e nível",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#00e68c",
+            "#2d2da8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 840,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "870863ccbfdd3977",
+        "type": "debug",
+        "z": "fc9743e492ace37e",
+        "name": "dados mysql",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 650,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "84cdf694870f29ca",
+        "type": "mqtt in",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "topic": "esp32/temperature",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "902f7841d4184556",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 130,
+        "y": 760,
+        "wires": [
+            [
+                "bff15b64922cf024"
+            ]
+        ]
+    },
+    {
+        "id": "3c77828150c953c1",
+        "type": "mqtt in",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "topic": "esp32/pressure",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "902f7841d4184556",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 120,
+        "y": 820,
+        "wires": [
+            [
+                "f93b14d0719e6e6e"
+            ]
+        ]
+    },
+    {
+        "id": "36b5e17b8bde19ad",
+        "type": "mqtt in",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "topic": "esp32/level",
+        "qos": "1",
+        "datatype": "auto",
+        "broker": "902f7841d4184556",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 880,
+        "wires": [
+            [
+                "e28923b116844276"
+            ]
+        ]
+    },
+    {
+        "id": "bff15b64922cf024",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "Temperatura",
+        "func": "var temperatura = msg.payload;\n\nmsg.temperatura = temperatura;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 310,
+        "y": 760,
+        "wires": [
+            [
+                "c8fa1f44872a77d9"
+            ]
+        ]
+    },
+    {
+        "id": "f93b14d0719e6e6e",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "Pressão",
+        "func": "var pressao = msg.payload;\n\nmsg.pressao = pressao;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 820,
+        "wires": [
+            [
+                "c8fa1f44872a77d9"
+            ]
+        ]
+    },
+    {
+        "id": "e28923b116844276",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "Nível",
+        "func": "var nivel = msg.payload;\n\nmsg.nivel = nivel;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 290,
+        "y": 880,
+        "wires": [
+            [
+                "c8fa1f44872a77d9"
+            ]
+        ]
+    },
+    {
+        "id": "c8fa1f44872a77d9",
+        "type": "join",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 450,
+        "y": 840,
+        "wires": [
+            [
+                "6acc377296bdddbd"
+            ]
+        ]
+    },
+    {
+        "id": "6acc377296bdddbd",
+        "type": "delay",
+        "z": "fc9743e492ace37e",
+        "name": "Limit",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 570,
+        "y": 840,
+        "wires": [
+            [
+                "01ab55a82d5c37cb"
+            ]
+        ]
+    },
+    {
+        "id": "01ab55a82d5c37cb",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "INSERT",
+        "func": "var temperatura = msg.payload['esp32/temperature'] || 0;\nvar pressao = msg.payload['esp32/pressure'] || 0;\nvar nivel = msg.payload['esp32/level'] || 0;\n\nmsg.topic = \"INSERT INTO tempLog (temperature, pressure, level, timestamp) VALUES (\" + temperatura + \", \" + pressao + \", \" + nivel + \", CURRENT_TIMESTAMP );\"\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 840,
+        "wires": [
+            [
+                "316d91baf8120260",
+                "46b200c23057e51d"
+            ]
+        ]
+    },
+    {
+        "id": "316d91baf8120260",
+        "type": "mysql",
+        "z": "fc9743e492ace37e",
+        "mydb": "7d5b61334a495a1c",
+        "name": "conexao_mysql",
+        "x": 880,
+        "y": 840,
+        "wires": [
+            [
+                "579f8f3d0613c62a"
+            ]
+        ]
+    },
+    {
+        "id": "46b200c23057e51d",
+        "type": "debug",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "579f8f3d0613c62a",
+        "type": "debug",
+        "z": "fc9743e492ace37e",
+        "name": "resultado",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "bbca103b31d3a4fd",
+        "type": "inject",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1120,
+        "wires": [
+            [
+                "15f0deba463482a0"
+            ]
+        ]
+    },
+    {
+        "id": "15f0deba463482a0",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "SELECT",
+        "func": "\nmsg.topic = \"SELECT * FROM tempLog ORDER BY timeStamp DESC LIMIT 10;\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 280,
+        "y": 1120,
+        "wires": [
+            [
+                "fb5b2f7ce4974079"
+            ]
+        ]
+    },
+    {
+        "id": "fb5b2f7ce4974079",
+        "type": "mysql",
+        "z": "fc9743e492ace37e",
+        "mydb": "7d5b61334a495a1c",
+        "name": "conexao_mysql",
+        "x": 460,
+        "y": 1120,
+        "wires": [
+            [
+                "83f312d7e7a07579"
+            ]
+        ]
+    },
+    {
+        "id": "83f312d7e7a07579",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "Formatar Dados",
+        "func": "const formattedData = [];\n\nmsg.payload.forEach((row) => {\n    const formattedRow = {\n        hora: row.timestamp,\n        temperatura: row.temperature,\n        pressao: row.pressure,\n        nivel: row.level\n    };\n    formattedData.push(formattedRow);\n});\n\nmsg.payload = formattedData;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 1120,
+        "wires": [
+            [
+                "a6cb882437d4633d"
+            ]
+        ]
+    },
+    {
+        "id": "a6cb882437d4633d",
+        "type": "ui_template",
+        "z": "fc9743e492ace37e",
+        "group": "6a4e2e67017b39e7",
+        "name": "Tabela com style",
+        "order": 1,
+        "width": 14,
+        "height": 10,
+        "format": "<style>\n  .title {\n    font-size: 1.5em;\n    text-align: center;\n    border-bottom: 2px solid #ccc;\n    padding-bottom: 5px;\n    margin-bottom: 5px;\n    color: white;\n    font-family: georgia;\n    font-weight: bold;\n  }\n\n  .data-row {\n    border-bottom: 1px solid #ccc;\n    padding-bottom: 5px;\n    margin-bottom: 5px;\n    font-family: \"Arial\", sans-serif;\n  }\n\n  .data-value {\n    text-align: center;\n  }\n</style>\n\n<div layout=\"row\" layout-align=\"start center\">\n  <span flex class=\"title\">Horário</span>\n  <span flex class=\"title\">Temperatura</span>\n  <span flex class=\"title\">Pressão</span>\n  <span flex class=\"title\">Nível</span>\n</div>\n\n<div layout=\"row\" layout-align=\"start center\" ng-repeat=\"row in msg.payload\" class=\"data-row\">\n  <span flex class=\"data-value\" style=\"color: black\">{{row.hora | date:'dd/MM/yyyy - HH:mm:ss'}}</span>\n  <span flex class=\"data-value\" style=\"color: red\">{{row.temperatura}} °C</span>\n  <span flex class=\"data-value\" style=\"color: green\">{{row.pressao}} psi</span>\n  <span flex class=\"data-value\" style=\"color: blue\">{{row.nivel}} Litros</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css\">",
+        "x": 850,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4a0a3da76b226ede",
+        "type": "inject",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 550,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60c58969577af08f",
+        "type": "mqtt out",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "topic": "Led/IndicaTemperatura",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a7f3c273b31ce5c7",
+        "x": 620,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "db4f800df7878cdc",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "LedT",
+        "func": "if (msg.payload > 800) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 180,
+        "wires": [
+            [
+                "60c58969577af08f",
+                "695f19c46cae6550"
+            ]
+        ]
+    },
+    {
+        "id": "b2a7c0b5ef69d057",
+        "type": "mqtt out",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "topic": "Led/IndicaPressao",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a7f3c273b31ce5c7",
+        "x": 610,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "2d9b37dec981d079",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "LedP",
+        "func": "if (msg.payload > 1600) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 400,
+        "wires": [
+            [
+                "b2a7c0b5ef69d057",
+                "3790eb0742f236b9"
+            ]
+        ]
+    },
+    {
+        "id": "a3dbb908779613d4",
+        "type": "mqtt out",
+        "z": "fc9743e492ace37e",
+        "name": "",
+        "topic": "Led/IndicaNivel",
+        "qos": "0",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "a7f3c273b31ce5c7",
+        "x": 600,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "bbfd3794eff5a25e",
+        "type": "function",
+        "z": "fc9743e492ace37e",
+        "name": "LedN",
+        "func": "if (msg.payload > 2800) {\n    msg.payload = true;\n} else {\n    msg.payload = false;\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 660,
+        "wires": [
+            [
+                "a3dbb908779613d4",
+                "fc1c3f46cddf93d8"
+            ]
+        ]
+    },
+    {
+        "id": "fc1c3f46cddf93d8",
+        "type": "debug",
+        "z": "fc9743e492ace37e",
+        "name": "LED-NIV",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "3790eb0742f236b9",
+        "type": "debug",
+        "z": "fc9743e492ace37e",
+        "name": "LED-PRES",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "695f19c46cae6550",
+        "type": "debug",
+        "z": "fc9743e492ace37e",
+        "name": "LED-Temp",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 140,
+        "wires": []
+    }
+]
