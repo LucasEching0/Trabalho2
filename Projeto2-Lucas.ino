@@ -2,11 +2,11 @@
 #include <PubSubClient.h>
 
 const char* ssid = "Lucas Eduardo";
-const char* password = "Ludwig10";
-const char* mqttServer = "ec2eching.duckdns.org";
+const char* password = "";
+const char* mqttServer = "";
 const int mqttPort = 1883;
 const char* mqttUser = "Lucas";
-const char* mqttPassword = "Lucario0110";
+const char* mqttPassword = "";
 const char* mqttTopicTemperature = "esp32/temperature";
 const char* mqttTopicPressure = "esp32/pressure";
 const char* mqttTopicLevel = "esp32/level";
